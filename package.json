@@ -1,0 +1,16 @@
+{
+      "name": "discord-chapter-notifier",
+      "version": "1.1.0",
+      "description": "API to notify new chapters from a website to Discord",
+      "main": "index.js",
+      "scripts": {
+        "start": "node index.js"
+      },
+      "dependencies": {
+        "axios": "^1.6.7",
+        "cheerio": "^1.0.0-rc.12",
+        "dotenv": "^16.4.5",
+        "node-schedule": "^2.1.1",
+        "winston": "^3.12.0"
+      }
+    }
