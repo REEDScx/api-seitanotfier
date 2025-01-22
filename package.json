@@ -1,6 +1,6 @@
 {
       "name": "discord-chapter-notifier",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "description": "API to notify new chapters from a website to Discord",
       "main": "index.js",
       "scripts": {

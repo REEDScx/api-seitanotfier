@@ -4,7 +4,7 @@
           "name": "seitacelestial",
           "url": "https://seitacelestial.com/",
           "allWorksRole": "@Todas as Obras",
-          "discordWebhookUrl": "https://discord.com/api/webhooks/1325897872423784618/-7yZCQUbnKEibPrzpa8iXeaxfN3da_4iqxU2dfnAFtutzAGqVGMpTesE-0bCq4KP1jHJ"
+          "discordWebhookUrl": "YOUR_DISCORD_WEBHOOK_URL"
         }
       ],
       "scheduleInterval": "*/5 * * * *",

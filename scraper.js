@@ -17,16 +17,16 @@ const axios = require('axios');
       const $ = cheerio.load(html);
       const chapters = [];
 
-      $('.list-chapter > li').each((i, el) => {
-        const titleElement = $(el).find('.chapter a');
-        const title = titleElement.attr('title').trim();
-        const chapterNumberMatch = title.match(/Capítulo (\d+)/);
-        const chapterNumber = chapterNumberMatch ? chapterNumberMatch[1] : null;
-        const seriesTitle = $(el).closest('.list-chapter').prev('h4').text().trim();
+      $('.eplister > ul > li').each((i, el) => {
+          const seriesTitle = $(el).find('.series').text().trim();
+          const chapterElement = $(el).find('.chapter a');
+          const chapterTitle = chapterElement.attr('title').trim();
+          const chapterNumberMatch = chapterTitle.match(/Capítulo (\d+)/);
+          const chapterNumber = chapterNumberMatch ? chapterNumberMatch[1] : null;
 
-        if (chapterNumber) {
-          chapters.push({ seriesTitle, chapterNumber });
-        }
+          if (seriesTitle && chapterNumber) {
+              chapters.push({ seriesTitle, chapterNumber });
+          }
       });
       return chapters;
     }
